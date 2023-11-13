@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+     <!-- Let Started -->
+    <!-- Header Part -->
+    <header>
+        <nav class="bg-blue-500 p-4 text-white font-serif cursor-pointer">
+            <div class="container mx-auto flex justify-between">
+                <h1 class="text-2xl font-semibold ">
+                    PWSkills Blog
+                </h1>
+                <button id="openBox" class="bg-white text-blue-500 px-4 py-2 rounded">+ Add Blog</button>
+            </div>
+            
+        </nav>
+    </header>
+
+
+    <!-- Main Part -->
+    <main class=" mx-auto mt-8">
+        <section id="postList" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+              
+        </section>
+
+    </main>
+
+    <!-- Add Blog Form Box -->
+    <div id="addBlogBox" class='bg-gray-500 fixed inset-0 bg-opacity-50 hidden w-screen h-screen items-center justify-center'>
+        <div class='shadow-xl p-4 bg-[#F4F6FE] px-6 py-8 w-[30rem] flex flex-col gap-4 rounded-2xl absolute left-[34rem] top-20'>
+            <div class=' font-mono font-extrabold '>
+            <button id="closeBox" class="bg-gray-500 text-white px-4 py-2 rounded relative left-[21rem]">X Close</button>
+            </div>
+            <div>
+                <form id="form" class="flex flex-col items-start">
+                <input placeholder="Enter Blog Post URL : "
+                 class="placeholder-gray-600 rounded w-full p-2 focus:outline-none focus:border-purple-700 px-2 py-2 mb-4 outline:none border boder-2 border-gray-300 active:border-gray-300"
+                 id="imgUrl"
+                 />
+                <input placeholder="Enter Blog Title : " 
+                class="placeholder-gray-600  rounded w-full p-2 focus:outline-none focus:border-purple-700 px-2 py-2 mb-4 outline:none border boder-2 border-gray-300 active:border-gray-300"
+                id="title"
+                />
+                <input placeholder="Enter Blog Description" 
+                class="placeholder-gray-600  rounded w-full p-2 focus:outline-none focus:border-purple-700 px-2 py-2 mb-4 outline:none border boder-2 border-gray-300 active:border-gray-300"
+                id="desc"
+                />
+
+                <textarea
+                class="placeholder-gray-600 h-64 w-full border rounded p-2 focus:outline-none focus:border-purple-700"
+                placeholder="Write.." 
+                id="content"
+                >
+                </textarea>
+
+                <button type="submit" id="btn" class='w-full bg-[#6F11F5] py-2 mt-4 rounded-xl text-xl text-white'>Add Post</button>
+            </form>
+            </div>
+            
+
+        </div>
+    </div>
+
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>

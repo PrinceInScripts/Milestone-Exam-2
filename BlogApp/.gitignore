@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+
+# Compiled output
+dist/
+
+# Editor files
+.vscode/
+
+# Tailwind CSS build output
+output.css
+
+# Post-specific build outputs
+postOutput.css
+postOutput.js
+
+# Ignore the Tailwind CSS configuration file if it's local
+tailwind.config.local.js
