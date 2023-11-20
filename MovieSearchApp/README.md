@@ -10,6 +10,7 @@ This is a simple movie search app that allows users to search for movies and vie
 
 ## Getting Started
 1. Clone the repository to your local machine:
+https://github.com/KnihtKingCoder/Milestone-Exam-2/tree/main/MovieSearchApp
 
 2. Open index.html in your web browser to use the application.
 

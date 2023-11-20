@@ -12,7 +12,7 @@ A simple Todo application built with React and Tailwind CSS.
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/react-todo-app.git
+   git clone https://github.com/KnihtKingCoder/Milestone-Exam-2/tree/main/TodoWebApp
 
 2. Navigate to the project directory:
 cd TodoWebApp

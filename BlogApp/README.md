@@ -26,8 +26,8 @@ PWSkills Blog is a lightweight blog application that allows users to create and 
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/your-repo.git
-   cd Blog App
+   git clonehttps://github.com/KnihtKingCoder/Milestone-Exam-2/tree/main/BlogApp
+   cd BlogApp
 
 2. Install dependencies: 
    npm install
