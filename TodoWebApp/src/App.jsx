@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import React,{ useState,useEffect} from 'react'
 
 
 function App() {
@@ -27,10 +27,22 @@ function App() {
     setTodos((prev)=>prev.filter((todo)=>todo.id !==id))
   }
 
+    useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"))
+
+    if (todos && todos.length > 0) {
+      setTodos(todos)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
+
 
   return (
     <>
-    <div className=' w-screen bg-[#58186C]'>
+    <div className=' w-screen min-h-screen bg-[#58186C]'>
 
     <div className=" flex items-center justify-center mb-24">
       <div className="bg-white flex justify-between items-center py-4 px-6 mt-10 rounded-2xl shadow-md w-full sm:w-96">
